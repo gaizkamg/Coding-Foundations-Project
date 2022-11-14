@@ -1,0 +1,245 @@
+/*  ------ NAV HEADER STYLES ---------------------------------------- */
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    color: white;
+}
+
+header .logo img {
+    height: 3rem;
+    margin: 2rem 3rem 2rem 2rem;
+    
+}
+
+header nav.navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+header ul.navbar-list {
+    display: flex;
+    flex: 2;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+header ul.navbar-list::before{
+    content: 'Explore';
+    text-transform: uppercase;
+    color: #f4e17f;
+    font-size: 1.4rem;
+    
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+}
+
+header ul.navbar-list li{
+    padding: 1rem;
+    min-width: 5rem;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+header ul.navbar-list li:hover{
+    letter-spacing: 0.1rem ;
+}
+
+
+header ul.navbar-list li:last-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    color: #b3b3b3;   
+    font-weight: 500;
+}
+
+header ul.navbar-list li:last-child i{
+    color: white;
+    font-size: 1.4rem;
+}
+
+header .navlogin{
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+header .navlogin > div{
+    padding: 1.2rem 1.8rem;
+    background: #343436;
+    color: white;
+    margin: 0 1.5rem 0 0;
+    position: relative;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .navlogin > div:hover{
+    background-color: #434343;
+}
+
+header .navlogin .create{
+    padding-right: 5rem;
+}
+
+header .navlogin .create i{
+    color: #47cf73;
+    margin-left: 0.6rem;
+    position: absolute;
+    top: 1.4rem;
+}
+
+header .navlogin .search{
+    padding: 0 1rem;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #535353;
+}
+
+header .navlogin .search:hover{
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.emoji-hand{
+    font-size: 4rem;
+}
+
+/* ------------------------------------------ END NAV HEADER STYLES ------  */
+
+
+/*  ------ SECTION STYLES  ------------------------------------------------ */
+
+main.mainSection {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: whitesmoke;
+    background: radial-gradient(100rem circle at top left, #404146, #000);
+    background-position: top left;
+}
+
+section.promotion-text {
+    max-width: 800px;
+    padding: 4rem 5rem 2rem 5rem;
+    flex: 3;
+}
+
+section.promotion-text h1{
+    font-family: "Lato Light", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif; 
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.1;
+    padding: 0.5rem 0;
+}
+
+section.promotion-text h1 span.bold{
+    font-family: "Lato Regular", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    font-weight: 500;
+}
+
+section.promotion-text h2{
+    font-family: "Lato Light", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif; 
+    font-size: 3.4rem; 
+    font-weight: 400;
+    color: #b3b3b3;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+}
+
+.buttons-promo{
+    margin: 5rem 0;
+}
+
+section.promotion-text div.buttons-promo a.green{
+    background: #47cf73;
+    color: black;
+    padding: 2rem;
+    margin-right: 3rem;
+    font-size: 3rem;
+    font-weight:600;
+    border-radius: 0.3rem;
+}
+
+section.promotion-text div.buttons-promo a.green:hover {
+    background: black;
+    color: #47cf73;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+section.promotion-text div.buttons-promo a.black:hover {
+    background: black;
+    color: #47cf73;
+    box-shadow: rgba(71, 207, 114, 0.055) 0px 54px 55px, rgba(71, 207, 114, 0.12) 0px -12px 30px, rgba(71, 207, 114, 0.12) 0px 4px 6px, rgba(71, 207, 114, 0.17) 0px 12px 13px, rgba(71, 207, 114, 0.09) 0px -3px 5px;
+}
+
+section.promotion-text div.buttons-promo a.black{
+    background: #000000;
+    color: white;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+}
+
+div.promotion-img {
+    max-width: 600px;
+    padding: 3.5rem 0 0 0;  
+    flex: 1;
+
+}
+
+div.promotion-img figure figcaption{
+    margin-bottom: 1rem;
+    font-family: "Lato Regular", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    font-weight: 600;
+}
+
+div.promotion-img figure figcaption span.bluetext{
+    color: #76daff;
+}
+
+div.promotion-img figure img{
+    width: 100%;
+}
+
+
+div.promotion-links {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;   
+}
+div.promotion-links a {
+    flex: 1;
+    padding: 1.5rem 1.5rem;
+    text-align: center;
+    
+    color: whitesmoke;
+    background: #373737;
+    border: 1px solid #676767;
+    
+}
+
+div.promotion-links a:hover{
+    background-color: #434343;
+}
+
+div.promotion-links a span.boldcaps{
+    text-transform: uppercase;
+    font-family: 'Telefon', Geneva, Verdana, sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 5rem;
+}

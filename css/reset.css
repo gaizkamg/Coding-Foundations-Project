@@ -1,0 +1,40 @@
+
+/* RESET */
+* {
+    /* Reseteamos todos los márgenes y paddings que aplica el navegador */
+    margin: 0;
+    padding: 0;
+
+    /* Hacemos que las cajas se midan desde fuera y no le añadan pixeles los margins, paddings. */
+    box-sizing: border-box;
+}
+
+html {
+    /* Este tamaño relativo al navegador (que suele tener 16px de letra predeterminada) hace que 1rem equivalga a 10px (porque 16 x 0.625 = 10)    */
+    font-size: 0.625em;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    /* Modificar */
+    font-family: "Lato";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: rgb(32, 32, 32);
+
+}
+
+iframe {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* FIN RESET */
